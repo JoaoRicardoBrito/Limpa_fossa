@@ -99,9 +99,8 @@
 | HERO-02 | Phase 1 | Pending |
 | HERO-03 | Phase 1 | Pending |
 | SERV-01 | Phase 1 | Pending |
+| CTA-03 | Phase 1 | Pending |
 | SERV-02 | Phase 2 | Pending |
-| CRED-01 | Phase 3 | Pending |
-| CRED-02 | Phase 3 | Pending |
 | FORM-01 | Phase 2 | Pending |
 | FORM-02 | Phase 2 | Pending |
 | FORM-03 | Phase 2 | Pending |
@@ -113,9 +112,10 @@
 | DATA-02 | Phase 2 | Pending |
 | DATA-03 | Phase 2 | Pending |
 | DATA-04 | Phase 2 | Pending |
+| CRED-01 | Phase 3 | Pending |
+| CRED-02 | Phase 3 | Pending |
 | CTA-01 | Phase 3 | Pending |
 | CTA-02 | Phase 3 | Pending |
-| CTA-03 | Phase 1 | Pending |
 
 **Coverage:**
 - v1 requirements: 23 total
@@ -124,4 +124,4 @@
 
 ---
 *Requirements defined: 2026-04-09*
-*Last updated: 2026-04-09 after initial definition*
+*Last updated: 2026-04-09 after roadmap creation*
