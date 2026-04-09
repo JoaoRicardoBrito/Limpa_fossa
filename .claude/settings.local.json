@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node \"C:/Users/Johau/PROJETOS/Limpa_fossa/.claude/get-shit-done/bin/gsd-tools.cjs\" commit \"docs: add project research\" --files .planning/research/)",
+      "Bash(node \"C:/Users/Johau/PROJETOS/Limpa_fossa/.claude/get-shit-done/bin/gsd-tools.cjs\" commit \"docs: define v1 requirements\" --files .planning/REQUIREMENTS.md)"
+    ]
+  }
+}
