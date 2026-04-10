@@ -23,7 +23,7 @@ export function Footer() {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-brand-green shrink-0" />
-                <span>(XX) XXXX-XXXX</span>
+                <span>(86) 99900-6920</span>
               </li>
               <li className="flex items-center gap-2">
                 <MessageCircle size={16} className="text-brand-green shrink-0" />
@@ -33,12 +33,12 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-brand-green transition-colors"
                 >
-                  (XX) XXXXX-XXXX
+                  (86) 99900-6920
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin size={16} className="text-brand-green shrink-0" />
-                <span>Atendemos em [Cidade] e região</span>
+                <span>Teresina, Piauí e região</span>
               </li>
             </ul>
           </div>
