@@ -1,5 +1,7 @@
-import { Phone, MessageCircle, MapPin, Share2 } from 'lucide-react'
+import { Phone, MapPin } from 'lucide-react'
 import { waLink } from '@/lib/constants'
+import whatsappLogo from '@/assets/whastapp.png'
+import instagramLogo from '@/assets/instagram.png'
 
 export function Footer() {
   return (
@@ -26,7 +28,7 @@ export function Footer() {
                 <span>(86) 99900-6920</span>
               </li>
               <li className="flex items-center gap-2">
-                <MessageCircle size={16} className="text-brand-green shrink-0" />
+                <img src={whatsappLogo} alt="WhatsApp" className="w-4 h-4 object-contain shrink-0" />
                 <a
                   href={waLink()}
                   target="_blank"
@@ -49,24 +51,13 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/santaclaraeco?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-400 hover:text-brand-green transition-colors text-sm"
                 >
-                  <Share2 size={16} />
+                  <img src={instagramLogo} alt="Instagram" className="w-4 h-4 object-contain shrink-0" />
                   Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-400 hover:text-brand-green transition-colors text-sm"
-                >
-                  <Share2 size={16} />
-                  Facebook
                 </a>
               </li>
             </ul>

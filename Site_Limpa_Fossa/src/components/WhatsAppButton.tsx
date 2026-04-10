@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import { MessageCircle } from 'lucide-react'
 import { waLink } from '@/lib/constants'
+import whatsappLogo from '@/assets/whastapp.png'
 
 export function WhatsAppButton() {
   return (
@@ -16,7 +16,7 @@ export function WhatsAppButton() {
       whileHover={{ scale: 1.08 }}
       whileTap={{ scale: 0.95 }}
     >
-      <MessageCircle size={22} fill="white" className="shrink-0" />
+      <img src={whatsappLogo} alt="WhatsApp" className="w-6 h-6 object-contain shrink-0" />
       <span className="hidden sm:inline text-sm font-semibold">WhatsApp</span>
     </motion.a>
   )

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import { MessageCircle, Share2 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import { waLink } from '@/lib/constants'
+import whatsappLogo from '@/assets/whastapp.png'
+import instagramLogo from '@/assets/instagram.png'
 
 export function SocialSection() {
   return (
@@ -28,14 +28,10 @@ export function SocialSection() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-8 py-3 text-base shadow-lg transition-colors"
             >
-              <Button
-                size="lg"
-                className="w-full sm:w-auto bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold gap-2 px-8 py-5 text-base shadow-lg"
-              >
-                <MessageCircle size={20} fill="white" />
-                Chamar no WhatsApp
-              </Button>
+              <img src={whatsappLogo} alt="WhatsApp" className="w-5 h-5 object-contain" />
+              Chamar no WhatsApp
             </motion.a>
 
             {/* Instagram CTA */}
@@ -45,15 +41,10 @@ export function SocialSection() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-white bg-transparent hover:bg-white hover:text-brand-green text-white font-bold px-8 py-3 text-base transition-colors"
             >
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-brand-green font-bold gap-2 px-8 py-5 text-base"
-              >
-                <Share2 size={20} />
-                Seguir no Instagram
-              </Button>
+              <img src={instagramLogo} alt="Instagram" className="w-5 h-5 object-contain" />
+              Seguir no Instagram
             </motion.a>
           </div>
         </motion.div>
