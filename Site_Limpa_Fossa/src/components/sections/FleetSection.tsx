@@ -2,14 +2,12 @@ import { motion } from 'framer-motion'
 import caminhao1 from '@/assets/caminhao1.jpeg'
 import caminhao2 from '@/assets/caminhao2.jpeg'
 import caminhao3 from '@/assets/caminhao3.jpeg'
-import caminhao4 from '@/assets/caminhao4.jpeg'
 import caminhao5 from '@/assets/caminhao5.jpeg'
 
 const trucks = [
   { src: caminhao1, alt: 'Caminhão de limpeza de fossa Santa Clara ECO 1' },
   { src: caminhao2, alt: 'Caminhão de limpeza de fossa Santa Clara ECO 2' },
   { src: caminhao3, alt: 'Caminhão de hidrojateamento Santa Clara ECO 3' },
-  { src: caminhao4, alt: 'Caminhão de hidrojateamento Santa Clara ECO 4' },
   { src: caminhao5, alt: 'Veículo operacional Santa Clara ECO 5' },
 ]
 
