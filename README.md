@@ -1,60 +1,47 @@
-# Limpa Fossa Express
+# Santa Clara ECO
 
-**Landing page profissional e de alta conversão para serviços de limpeza de fossa, desentupimento e limpeza de caixa de gordura.**
+**Landing page profissional e de alta conversão para serviços de saneamento ambiental.**
 
-**Objetivo:** permitir que clientes agendem serviços online em menos de 60 segundos, sem telefonemas, garantindo confiança através de métricas e design claro.
+Empresa fundada em 2011, sediada em **Teresina, Piauí**. Oferece limpeza de fossa, desentupimento de rede de esgoto, limpeza de caixa de gordura e hidrojateamento.
 
----
-
-**Conteúdo deste README**
-
-- **Project:** Visão geral e propósito.
-- **Stack:** Tecnologias usadas.
-- **Como executar:** instruções de instalação, desenvolvimento e build.
-- **Variáveis de ambiente:** o que configurar (ver `Site_Limpa_Fossa/.env.example`).
-- **Estrutura do projeto:** descrição dos arquivos e pastas principais.
-- **Scripts úteis:** scripts definidos em `Site_Limpa_Fossa/package.json`.
-- **Deploy:** nota sobre deployment (Vercel) e recomendações.
-- **Contribuição e estilo:** convenções e ferramentas de desenvolvimento.
+**Objetivo:** permitir que clientes agendem serviços online em menos de 60 segundos, sem telefonemas, transmitindo confiança através de métricas reais e design limpo.
 
 ---
 
-**Project**
+## Contato da empresa
 
-Limpa Fossa Express é uma SPA (Vite + React + TypeScript) focada em conversão para serviços de limpeza de fossas e desentupimento. A aposta principal é oferecer agendamento rápido, UX móvel otimizado e credibilidade por meio de métricas e seções de prova social.
-
-**Restrições importantes**
-
-- Tech Stack fixa: React + Vite + TypeScript + Tailwind CSS + Supabase.
-- Mobile-first e performance (LCP < 2.5s) são requisitos de produto.
-
----
-
-**Stack / Dependências principais**
-
-- React 18
-- Vite
-- TypeScript
-- Tailwind CSS 3
-- @supabase/supabase-js (cliente)
-- react-hook-form + zod (formulários e validação)
-- recharts (gráficos de credibilidade)
-- framer-motion (animações declarativas)
-
-Veja o manifest em [Site_Limpa_Fossa/package.json](Site_Limpa_Fossa/package.json).
+| Canal | Dado |
+|---|---|
+| WhatsApp | [(86) 99900-6920](https://wa.me/5586999006920) |
+| Instagram | [@santaclaraeco](https://www.instagram.com/santaclaraeco) |
+| Localização | Teresina, Piauí e região |
 
 ---
 
-**Pré-requisitos (desenvolvimento)**
+## Stack
 
-- Node.js (recomenda-se v18+ ou a versão suportada pelo projeto)
+| Tecnologia | Versão | Uso |
+|---|---|---|
+| React | 18 | Framework UI |
+| Vite | 8 | Bundler e dev server |
+| TypeScript | 6 | Tipagem estática |
+| Tailwind CSS | 3 | Estilização utility-first |
+| framer-motion | 12 | Animações declarativas |
+| react-hook-form + zod | 7 + 4 | Formulários e validação |
+| @supabase/supabase-js | 2 | Persistência de agendamentos |
+| recharts | 3 | Gráficos de credibilidade |
+| lucide-react | 1 | Ícones |
+
+---
+
+## Pré-requisitos
+
+- Node.js 18+
 - npm ou pnpm
 
 ---
 
-**Como rodar (desenvolvimento)**
-
-1. Abra um terminal na raiz do projeto e entre na pasta do site:
+## Como rodar (desenvolvimento)
 
 ```bash
 cd Site_Limpa_Fossa
@@ -62,96 +49,150 @@ npm install
 npm run dev
 ```
 
-O comando `npm run dev` inicia o servidor Vite (ver `Site_Limpa_Fossa/package.json`).
+O servidor Vite sobe em `http://localhost:5173`.
 
-**Build para produção**
+### Build para produção
 
 ```bash
-cd Site_Limpa_Fossa
 npm run build
 ```
 
-**Preview do build**
+### Preview do build
 
 ```bash
 npm run preview
 ```
 
----
+### Lint
 
-**Variáveis de ambiente**
-
-O projeto usa Supabase para persistência de agendamentos. Configure as variáveis no arquivo de ambiente na raiz do site:
-
-- `VITE_SUPABASE_URL` — URL do projeto Supabase.
-- `VITE_SUPABASE_ANON_KEY` — chave `anon` (NUNCA subir a `service_role` no frontend).
-
-Exemplo em [Site_Limpa_Fossa/.env.example](Site_Limpa_Fossa/.env.example).
+```bash
+npm run lint
+```
 
 ---
 
-**Scripts disponíveis** (ver `Site_Limpa_Fossa/package.json`)
+## Variáveis de ambiente
 
-- `dev`: inicia Vite em modo desenvolvimento
-- `build`: compila TypeScript (`tsc -b`) e roda `vite build`
-- `preview`: serve o build gerado
-- `lint`: roda `eslint` no código
+Crie o arquivo `Site_Limpa_Fossa/.env` com:
 
----
+```env
+VITE_SUPABASE_URL=https://SEU_PROJETO.supabase.co
+VITE_SUPABASE_ANON_KEY=sua_anon_key_aqui
+```
 
-**Estrutura principal do projeto**
-
-- [Site_Limpa_Fossa/package.json](Site_Limpa_Fossa/package.json) — manifest do frontend
-- [Site_Limpa_Fossa/vite.config.ts](Site_Limpa_Fossa/vite.config.ts) — configuração do Vite
-- [Site_Limpa_Fossa/tailwind.config.js](Site_Limpa_Fossa/tailwind.config.js) — configuração Tailwind (paleta verde/azul/branco)
-- [Site_Limpa_Fossa/src/App.tsx](Site_Limpa_Fossa/src/App.tsx) — ponto de entrada do app React
-- [Site_Limpa_Fossa/src/main.tsx](Site_Limpa_Fossa/src/main.tsx) — bootstrap do React
-- [Site_Limpa_Fossa/src/index.css](Site_Limpa_Fossa/src/index.css) — estilos globais / Tailwind
-- [Site_Limpa_Fossa/src/components](Site_Limpa_Fossa/src/components) — componentes UI e seções (Hero, Header, Footer, etc.)
-- [Site_Limpa_Fossa/src/hooks/useAppointmentForm.ts](Site_Limpa_Fossa/src/hooks/useAppointmentForm.ts) — lógica do formulário de agendamento
-- [Site_Limpa_Fossa/src/lib/supabase.ts](Site_Limpa_Fossa/src/lib/supabase.ts) — cliente Supabase
-- [Site_Limpa_Fossa/src/services/appointments.ts](Site_Limpa_Fossa/src/services/appointments.ts) — métodos para criar/consultar agendamentos
-- [Site_Limpa_Fossa/tsconfig.json](Site_Limpa_Fossa/tsconfig.json) — configuração TypeScript do app
+> **Atenção:** nunca suba a chave `service_role` no frontend.
 
 ---
 
-**Conveniências de desenvolvimento e qualidade**
+## Estrutura do projeto
 
-- ESLint para linting (`npm run lint`).
-- Prettier + `prettier-plugin-tailwindcss` (recomenda-se configurar localmente) para formatação e ordenação de classes Tailwind.
-
-**Boas práticas**
-
-- Mantenha as animações do Framer Motion abaixo do fold para não afetar LCP.
-- Carregue Recharts com `React.lazy()` + `Suspense` para não bloquear LCP.
-- Valide formulários offline com `zod` antes de enviar para Supabase.
+```
+Site_Limpa_Fossa/
+├── src/
+│   ├── assets/                  # Imagens estáticas
+│   │   ├── Logo.png             # Logo da Santa Clara ECO
+│   │   ├── instagram.png        # Ícone Instagram
+│   │   ├── whastapp.png         # Ícone WhatsApp
+│   │   ├── caminhao1.jpeg       # Fotos da frota
+│   │   ├── caminhao2.jpeg
+│   │   ├── caminhao3.jpeg
+│   │   └── caminhao5.jpeg
+│   ├── components/
+│   │   ├── sections/
+│   │   │   ├── Header.tsx           # Navegação sticky com Logo.png
+│   │   │   ├── HeroSection.tsx      # Seção principal com CTA
+│   │   │   ├── AboutSection.tsx     # Nossa História 🌿 (desde 2011)
+│   │   │   ├── FleetSection.tsx     # Nossa Frota 🚛 (carrossel automático)
+│   │   │   ├── ServicesSection.tsx  # Cards de serviços (4 opções)
+│   │   │   ├── CredibilitySection.tsx # Gráficos e KPIs (lazy-loaded)
+│   │   │   ├── AppointmentSection.tsx # Formulário de agendamento
+│   │   │   ├── SocialSection.tsx    # WhatsApp + Instagram CTA
+│   │   │   └── Footer.tsx           # Contato e redes sociais
+│   │   ├── ui/                  # Componentes base (button, card, badge)
+│   │   └── WhatsAppButton.tsx   # Botão flutuante WhatsApp
+│   ├── hooks/
+│   │   └── useAppointmentForm.ts  # Lógica do formulário com Zod
+│   ├── lib/
+│   │   ├── constants.ts         # WA_NUMBER, waLink()
+│   │   ├── supabase.ts          # Cliente Supabase
+│   │   └── utils.ts             # cn() e utilitários
+│   ├── services/
+│   │   └── appointments.ts      # createAppointment()
+│   ├── types/
+│   │   └── index.ts             # ServiceType, SERVICE_LABELS
+│   ├── App.tsx                  # Composição das seções
+│   └── main.tsx                 # Bootstrap React
+├── package.json
+├── vite.config.ts
+├── tailwind.config.js
+└── tsconfig.json
+```
 
 ---
 
-**Deploy**
+## Seções do site (ordem de renderização)
 
-Recomendado: Vercel (deploy zero-config para Vite). Ao conectar o repositório, defina as variáveis de ambiente listadas acima no painel de ambiente do projeto Vercel.
-
----
-
-**Como contribuir**
-
-- Abra uma issue descrevendo o problema ou feature.
-- Crie um branch baseado em `main` com um nome claro (`feat/`, `fix/`).
-- Abra um PR com descrição e screenshots/steps para reproduzir.
-
----
-
-**Contatos / Créditos**
-
-- Projeto: Limpa Fossa Express
-- Arquivos principais e design system desenvolvidos com Tailwind + componentes shadcn-style (custom UI).
+1. **Header** — Logo + navegação sticky
+2. **HeroSection** — Headline, subtítulo, CTA e indicadores de confiança
+3. **AboutSection** — Nossa História 🌿, fundada em 2011, missão ambiental
+4. **FleetSection** — Nossa Frota 🚛, carrossel com auto-avanço a cada 5s
+5. **ServicesSection** — 4 cards de serviço (clicáveis → pré-selecionam no formulário)
+6. **CredibilitySection** — KPIs e gráficos (lazy-loaded para performance)
+7. **AppointmentSection** — Formulário de agendamento integrado ao Supabase
+8. **SocialSection** — CTAs WhatsApp e Instagram
+9. **Footer** — Contato, localização, redes sociais e copyright
+10. **WhatsAppButton** — Botão flutuante fixo
 
 ---
 
-**Licença**
+## Serviços disponíveis
 
-Nenhuma licença especificada no repositório. Adicione um arquivo `LICENSE` se desejar publicar com termos explícitos.
+| Valor (DB) | Label exibido |
+|---|---|
+| `limpeza-fossa` | Limpeza de Fossa |
+| `desentupimento` | Desentupimento de Rede de Esgoto |
+| `caixa-gordura` | Caixa de Gordura |
+| `hidrojateamento` | Hidrojateamento |
+
+Tipos definidos em [`src/types/index.ts`](Site_Limpa_Fossa/src/types/index.ts). Para adicionar um serviço, basta incluir o valor no `ServiceType`, `SERVICE_LABELS`, no enum Zod em `useAppointmentForm.ts` e no `<select>` do formulário.
 
 ---
 
+## Formulário de agendamento
+
+- Validação com **Zod** offline (sem chamada Supabase)
+- Horário de atendimento: **seg–sáb, 07h–18h** (rejeitado no front)
+- Persiste rascunho em `sessionStorage` durante a sessão
+- Serviço pré-selecionado ao clicar em um card de serviço
+- Sucesso: exibe resumo + link direto para WhatsApp
+
+---
+
+## Boas práticas mantidas
+
+- `CredibilitySection` carregada com `React.lazy()` + `Suspense` (não afeta LCP)
+- Imagens da frota com `loading="lazy"`
+- Animações `framer-motion` abaixo do fold
+- Formulário validado no cliente com Zod antes de qualquer requisição
+
+---
+
+## Deploy
+
+Recomendado: **Vercel** (deploy zero-config para Vite).
+
+1. Conecte o repositório no painel Vercel
+2. Defina a pasta raiz como `Site_Limpa_Fossa`
+3. Configure as variáveis de ambiente (`VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`)
+
+---
+
+## Como contribuir
+
+1. Abra uma issue descrevendo o problema ou feature
+2. Crie um branch baseado em `master` (`feat/`, `fix/`)
+3. Abra um PR com descrição e screenshots
+
+---
+
+© 2026 Santa Clara ECO — Teresina, Piauí
