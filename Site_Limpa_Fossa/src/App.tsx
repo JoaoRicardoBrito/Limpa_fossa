@@ -20,8 +20,8 @@ function App() {
       <Header />
       <main>
         <HeroSection />
-        <ServicesSection />
         <AboutSection />
+        <ServicesSection />
         <Suspense fallback={<div className="py-16" />}>
           <CredibilitySection />
         </Suspense>
