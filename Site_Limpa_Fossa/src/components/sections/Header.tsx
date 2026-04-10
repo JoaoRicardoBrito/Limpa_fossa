@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import logo from '@/assets/Logo.png'
 
 const navItems = [
   { label: 'Início', href: '#inicio' },
@@ -16,8 +17,12 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#inicio" className="text-brand-green font-bold text-xl tracking-tight">
-            Santa Clara ECO
+          <a href="#inicio" className="flex items-center">
+            <img
+              src={logo}
+              alt="Santa Clara ECO"
+              className="h-10 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop nav */}

@@ -3,6 +3,7 @@ import { Header } from '@/components/sections/Header'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { ServicesSection } from '@/components/sections/ServicesSection'
 import { AboutSection } from '@/components/sections/AboutSection'
+import { FleetSection } from '@/components/sections/FleetSection'
 import { AppointmentSection } from '@/components/sections/AppointmentSection'
 import { SocialSection } from '@/components/sections/SocialSection'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
@@ -21,6 +22,7 @@ function App() {
       <main>
         <HeroSection />
         <AboutSection />
+        <FleetSection />
         <ServicesSection />
         <Suspense fallback={<div className="py-16" />}>
           <CredibilitySection />
