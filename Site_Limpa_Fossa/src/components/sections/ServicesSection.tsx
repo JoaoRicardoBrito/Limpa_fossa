@@ -1,4 +1,4 @@
-import { Droplets, Wrench, Container } from 'lucide-react'
+import { Droplets, Wrench, Container, Zap } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import { motion } from 'framer-motion'
 import {
@@ -21,24 +21,31 @@ interface Service {
 const services: Service[] = [
   {
     icon: Droplets,
-    title: 'Limpeza de Fossa',
+    title: '🪣 Limpeza de Fossa',
     description:
       'Serviço completo de limpeza e esvaziamento de fossas sépticas com equipamentos modernos e equipe especializada.',
     value: 'limpeza-fossa',
   },
   {
     icon: Wrench,
-    title: 'Desentupimento',
+    title: '🚿 Desentupimento de Rede de Esgoto',
     description:
-      'Desentupimento de pias, ralos, vasos sanitários e tubulações com rapidez e eficiência garantida.',
+      'Desentupimento especializado em redes de esgoto, canos, tubulações e coletores — com tecnologia e rapidez garantida.',
     value: 'desentupimento',
   },
   {
     icon: Container,
-    title: 'Caixa de Gordura',
+    title: '🍳 Caixa de Gordura',
     description:
       'Limpeza e manutenção preventiva de caixas de gordura residenciais e comerciais, evitando entupimentos.',
     value: 'caixa-gordura',
+  },
+  {
+    icon: Zap,
+    title: '💧 Hidrojateamento',
+    description:
+      'Limpeza de alta pressão para desobstruir tubulações, galerias e redes de esgoto com máxima eficiência e segurança.',
+    value: 'hidrojateamento',
   },
 ]
 
@@ -72,7 +79,7 @@ export function ServicesSection() {
         </motion.div>
 
         {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, i) => {
             const Icon = service.icon
             return (

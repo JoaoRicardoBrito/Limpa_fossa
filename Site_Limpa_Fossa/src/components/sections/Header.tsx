@@ -17,7 +17,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#inicio" className="text-brand-green font-bold text-xl tracking-tight">
-            Limpa Fossa Express
+            Santa Clara ECO
           </a>
 
           {/* Desktop nav */}

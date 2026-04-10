@@ -34,7 +34,7 @@ export const appointmentSchema = z.object({
     .max(200, 'Endereço muito longo')
     .transform((val) => val.replace(/\s+/g, ' ')), // collapse internal spaces
 
-  servico: z.enum(['limpeza-fossa', 'desentupimento', 'caixa-gordura'], {
+  servico: z.enum(['limpeza-fossa', 'desentupimento', 'caixa-gordura', 'hidrojateamento'], {
     error: 'Selecione um serviço',
   }),
 

@@ -9,11 +9,11 @@ export function Footer() {
           {/* Column 1: Brand */}
           <div>
             <p className="text-brand-green font-bold text-xl mb-3">
-              Limpa Fossa Express
+              Santa Clara ECO
             </p>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Serviços de limpeza de fossa e desentupimento com qualidade,
-              agilidade e responsabilidade ambiental.
+              🌿 Saneamento com responsabilidade ambiental. Qualidade,
+              agilidade e compromisso com um futuro mais limpo e sustentável.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ export function Footer() {
         <hr className="border-gray-700 my-8" />
 
         <p className="text-center text-gray-500 text-sm">
-          © 2026 Limpa Fossa Express. Todos os direitos reservados.
+          © 2026 Santa Clara ECO. Todos os direitos reservados.
         </p>
       </div>
     </footer>

@@ -151,9 +151,10 @@ export function AppointmentSection() {
                 defaultValue=""
               >
                 <option value="" disabled>Selecione um serviço...</option>
-                <option value="limpeza-fossa">Limpeza de Fossa</option>
-                <option value="desentupimento">Desentupimento</option>
-                <option value="caixa-gordura">Caixa de Gordura</option>
+                <option value="limpeza-fossa">🪣 Limpeza de Fossa</option>
+                <option value="desentupimento">🚿 Desentupimento de Rede de Esgoto</option>
+                <option value="caixa-gordura">🍳 Caixa de Gordura</option>
+                <option value="hidrojateamento">💧 Hidrojateamento</option>
               </select>
               {errors.servico && <FieldError message={errors.servico.message} />}
             </div>

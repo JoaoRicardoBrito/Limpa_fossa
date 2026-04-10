@@ -40,7 +40,7 @@ export function SocialSection() {
 
             {/* Instagram CTA */}
             <motion.a
-              href="https://instagram.com/limpafossaexpress"
+              href="https://instagram.com/santaclaraeco"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}

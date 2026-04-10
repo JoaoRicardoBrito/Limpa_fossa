@@ -2,11 +2,13 @@ export type ServiceType =
   | 'limpeza-fossa'
   | 'desentupimento'
   | 'caixa-gordura'
+  | 'hidrojateamento'
 
 export const SERVICE_LABELS: Record<ServiceType, string> = {
   'limpeza-fossa': 'Limpeza de Fossa',
-  'desentupimento': 'Desentupimento',
+  'desentupimento': 'Desentupimento de Rede de Esgoto',
   'caixa-gordura': 'Caixa de Gordura',
+  'hidrojateamento': 'Hidrojateamento',
 }
 
 export interface AppointmentFormData {
