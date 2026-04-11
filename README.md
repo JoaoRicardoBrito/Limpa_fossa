@@ -14,7 +14,7 @@ Empresa fundada em 2011, sediada em **Teresina, Piauí**. Oferece limpeza de fos
 |---|---|
 | WhatsApp | [(86) 99900-6920](https://wa.me/5586999006920) |
 | Instagram | [@santaclaraeco](https://www.instagram.com/santaclaraeco) |
-| Localização | Teresina, Piauí e região |
+| Localização | Teresina, Piauí e Timon Maranhão |
 
 ---
 
