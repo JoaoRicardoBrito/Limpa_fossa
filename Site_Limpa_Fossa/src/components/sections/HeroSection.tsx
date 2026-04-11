@@ -12,7 +12,7 @@ export function HeroSection() {
       <div className="max-w-4xl mx-auto text-center text-white">
         {/* Service area badge */}
         <Badge className="mb-6 bg-white/20 text-white border-white/30 hover:bg-white/30 text-sm px-4 py-1">
-          📍 Atendemos em Teresina, Piauí e região
+          📍 Atendemos em Teresina, Piauí e Timon, Maranhão
         </Badge>
 
         {/* Main headline */}
